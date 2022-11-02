@@ -85,24 +85,42 @@ console.log(getMax([1, 3, 9])); */
 ////////////////////////////////////
 // 8) Reverse a string
 
-function reverseString(str) {
+/* function reverseString(str) {
     let reversedString = '';
 for (let i = 0; i < str.length; ++i) {
     reversedString = str[i] + reversedString 
-}
+} //  adding str[i] first and then reversedString means looking at the word from behind
 return reversedString;
 }
 console.log(reverseString('gurami'))
+ */
 
 
 
+///////////////////////////////////////////
+// 9) turn every element in array into 0
 
+/* function convertToZeros(arr) {
+    let newArr = [];
+    for (let i = 0; i <= arr.length; ++i) {
+        newArr[i] = 0
+    }
+    return newArr;
+}
+console.log(convertToZeros([5, 10, 9]))
 
+ */
+// another way  w/ fill
+/* function convertToZeros(arr) {
+    return new Array(arr.length).fill(0);
+}
+console.log(convertToZeros([1, 2, 5, 10]))
 
+ */
 
+// another another way w/ map
 
-
-
-
-
-
+function convertToZeros(arr) {
+    return arr.map(elem => 0)
+}
+console.log(convertToZeros([1, 2, 65]))
