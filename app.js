@@ -120,7 +120,71 @@ console.log(convertToZeros([1, 2, 5, 10]))
 
 // another another way w/ map
 
-function convertToZeros(arr) {
+/* function convertToZeros(arr) {
     return arr.map(elem => 0)
 }
 console.log(convertToZeros([1, 2, 65]))
+ */
+
+
+
+
+
+
+/////////////////////////////////////
+// 10) filter out all bananas 
+/* 
+function removeApples(arr) {
+    let noApples = [];
+    for (let i = 0; i <= arr.length; ++i) {
+        if (arr[i] !== 'apples') {
+        noApples.push(arr[i]);
+    }
+}
+    return noApples;
+}
+console.log(removeApples(['bananas', 'apples'])) */
+
+
+// another way  with .filter
+
+/* unction removeApples(arr) {
+    return arr.filter(elem => elem !== 'Apples')
+}
+
+console.log(removeApples(['1', '2', 'Apples'])) */
+
+
+/////////////////////////////////////////
+//11) filter out all the falsy values 
+
+/* function filterOutFalsy(arr) {
+    return arr.filter(elem => !!elem === true)
+}
+console.log(filterOutFalsy(['',0, null, undefined,"0"])) */
+
+/// another way by for
+
+/* function filterOutFalsy(arr) {
+    let noFalsy = [];
+    for (i = 0; i <= arr.length; ++i) {
+        if (!!arr[i] === true) {
+            noFalsy.push(arr[i]);
+        }
+    }
+    return noFalsy;
+}
+console.log(filterOutFalsy(['',0, null, undefined,"0"]))
+ */
+
+///////////////////////////////////////////
+// 12)  truthy to true, falsy to false 
+/* function convertToBoolean(arr) {
+    return arr.map(elem => !!elem)
+}
+console.log(convertToBoolean([null, true]))
+ */
+
+
+///////////////////////FIN//////////////////////
+
